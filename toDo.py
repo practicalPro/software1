@@ -95,7 +95,6 @@ class ToDoApp:
             delete_button.grid(row=index, column=2)
 
     def complete_task(self, index):
-        self.task_history.append(list(self.tasks))  # Save current tasks to history
         self.filtered_tasks[index]["completed"] = not self.filtered_tasks[index]["completed"]
         self.filter_tasks()
 
